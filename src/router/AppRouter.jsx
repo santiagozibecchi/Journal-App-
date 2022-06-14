@@ -3,6 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import AuthRoutes from '../auth/routes/AuthRoutes';
 import JournalRoutes from '../journal/routes/JournalRoutes';
 
+// Centralizacion de todas las rutas => hacia donde las quiero dirigir
+
 const AppRouter = () => {
 
      return (
