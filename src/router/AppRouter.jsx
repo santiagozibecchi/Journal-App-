@@ -1,11 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { useSelector } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 import AuthRoutes from '../auth/routes/AuthRoutes';
 import JournalRoutes from '../journal/routes/JournalRoutes';
+import { CheckingAuth } from '../ui';
 
 // Centralizacion de todas las rutas => hacia donde las quiero dirigir
 
 const AppRouter = () => {
+
+     const { status } = useSelector( status => status.auth);
+
+     if (status === 'checking') {
+          return <CheckingAuth />
+     }
+
 
      return (
           <Routes>
