@@ -17,7 +17,7 @@ export const CheckingAuth = () => {
                }}
           >
 
-               <Grid item 
+               <Grid container 
                     direction="row"
                     justifyContent="center"
                >
